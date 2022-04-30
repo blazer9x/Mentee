@@ -5,8 +5,10 @@ Services used are ALB (LoadBalancers), TG (TargetGroups), SG (Security Groups) -
 
 
 ALB is used for LoadBalancing the User Requests.
-TG are used for distinc user requests based on application path (ex: example.com/mymentor or example.com/mymentee).
+TGs are used for distinc user requests based on application path (ex: example.com/mymentor or example.com/mymentee).
 
+SGs (Security Groups) - marked as red-dash square are used for main security measurement across Applications.
+*IAMs can be used for managing security measurements and separates administrator (or groups) access across AWS services.
 
 MyMentor and MyMentee Apps used the ECS services for Scalability and Relibility.
 AWS Code Builds, Container Registry and Elastic Container Services will be use for Update and Running Containers.
